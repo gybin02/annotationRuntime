@@ -5,10 +5,16 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
+/**
+ * 动态代理；
+ *
+ * @author zhengxiaobin@xiaoyouzi.com
+ * @since 17/5/19 下午12:11
+ */
+
 public class DynamicHandler implements InvocationHandler {
     private WeakReference<Object> handlerRef;
-    private final HashMap<String, Method> methodMap = new HashMap<String, Method>(
-            1);
+    private final HashMap<String, Method> methodMap = new HashMap<String, Method>(1);
 
     public DynamicHandler(Object handler) {
         this.handlerRef = new WeakReference<Object>(handler);
