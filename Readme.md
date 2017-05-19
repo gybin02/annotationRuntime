@@ -6,10 +6,10 @@ Annotation 可以实现一些简单的初始化，让Code更简单；
 ### 已完成
 * @JFindView(<ViewId>)
 支持 findViewById 
-@JFindViewOnClick
+* @JFindViewOnClick
 支持 findViewById and  onClick
 > Activity 需要 implement View.onClick.class;
-@JIntent(<key>)
+* @JIntent(<key>)
 支持Intent.getStringExtra(<String>)
 
 ### 待实现
