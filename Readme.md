@@ -15,7 +15,7 @@ Annotation 可以实现一些简单的初始化，让Code更简单；
 
 支持Intent.getStringExtra(<String>) 等
 
-'''
+````
      
    public class DemoActivity implement View.OnClickListener{
      //Android 代码
@@ -66,9 +66,9 @@ Annotation 可以实现一些简单的初始化，让Code更简单；
       }
 
       //TODO:如果需要取参的越来越多，代码会是什么样的呢？逻辑上是不是很复杂，你还要考虑getIntent
-‘’‘
+````
 使用 注解实现：
-```
+````
     @JIntent("testString")
     private String testString;
     @JIntent("testBoolean")
@@ -97,7 +97,7 @@ Annotation 可以实现一些简单的初始化，让Code更简单；
           }
       }
 
-```
+````
 ### 待实现
 
 ### 常见问题
