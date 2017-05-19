@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 
-import com.seeker.tony.cutter.annotation.BindViewMe;
+import com.seeker.tony.cutter.annotation.JFindView;
 import com.seeker.tony.cutter.annotation.ContentView;
-import com.seeker.tony.cutter.annotation.MeIntent;
-import com.seeker.tony.cutter.annotation.MeOnClick;
+import com.seeker.tony.cutter.annotation.JIntent;
+import com.seeker.tony.cutter.annotation.JFindViewOnClick;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -37,7 +37,7 @@ public class ViewInject {
         Class<? extends Activity> aClass = activity.getClass();
         Method[] methods = aClass.getDeclaredMethods();
         for (Method method : methods) {
-            MeOnClick annotation = method.getAnnotation(MeOnClick.class);
+            JFindViewOnClick annotation = method.getAnnotation(JFindViewOnClick.class);
             if (annotation != null) {
                 int[] value = annotation.value();
                 for (int i : value) {
@@ -62,7 +62,7 @@ public class ViewInject {
         Class<? extends Activity> aClass = activity.getClass();
         Field[] declaredFields = aClass.getDeclaredFields();
         for (Field field : declaredFields) {
-            BindViewMe annotation = field.getAnnotation(BindViewMe.class);
+            JFindView annotation = field.getAnnotation(JFindView.class);
 
             try {
                 if (annotation != null) {
@@ -71,7 +71,7 @@ public class ViewInject {
                     field.set(activity, viewById);
                 }
 
-                MeIntent annoIntent = field.getAnnotation(MeIntent.class);
+                JIntent annoIntent = field.getAnnotation(JIntent.class);
                 if (annoIntent != null) {
                     String value = annoIntent.value();
                     Intent intent = activity.getIntent();

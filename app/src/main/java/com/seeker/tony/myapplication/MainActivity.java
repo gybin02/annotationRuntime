@@ -19,7 +19,7 @@ import com.seeker.tony.cutter.annotation.MeOnClick;
 import com.seeker.tony.cutter.process.ViewInject;
 
 @ContentView(R.layout.activity_main)
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindViewMe(R.id.btn_hello)
     Button btnHello;

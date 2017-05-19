@@ -20,6 +20,11 @@ public class DynamicHandler implements InvocationHandler {
         this.handlerRef = new WeakReference<Object>(handler);
     }
 
+    /**
+     * 新增执行方法代理
+     * @param name
+     * @param method
+     */
     public void addMethod(String name, Method method) {
         methodMap.put(name, method);
     }
