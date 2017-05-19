@@ -1,4 +1,4 @@
-package com.seeker.tony.myapplication.annotation;
+package com.seeker.tony.cutter.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,8 +10,8 @@ import java.lang.annotation.Target;
  * @since 17/5/18
  */
 
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface BindViewMe {
+public @interface ContentView {
     int value();
 }

@@ -1,13 +1,13 @@
-package com.seeker.tony.myapplication.process;
+package com.seeker.tony.cutter.process;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 
-import com.seeker.tony.myapplication.annotation.BindViewMe;
-import com.seeker.tony.myapplication.annotation.ContentView;
-import com.seeker.tony.myapplication.annotation.MeIntent;
-import com.seeker.tony.myapplication.annotation.MeOnClick;
+import com.seeker.tony.cutter.annotation.BindViewMe;
+import com.seeker.tony.cutter.annotation.ContentView;
+import com.seeker.tony.cutter.annotation.MeIntent;
+import com.seeker.tony.cutter.annotation.MeOnClick;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

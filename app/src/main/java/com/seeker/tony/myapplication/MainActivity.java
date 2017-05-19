@@ -13,10 +13,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.Test;
-import com.seeker.tony.myapplication.annotation.ContentView;
-import com.seeker.tony.myapplication.annotation.BindViewMe;
-import com.seeker.tony.myapplication.annotation.MeOnClick;
-import com.seeker.tony.myapplication.process.ViewInject;
+import com.seeker.tony.cutter.annotation.ContentView;
+import com.seeker.tony.cutter.annotation.BindViewMe;
+import com.seeker.tony.cutter.annotation.MeOnClick;
+import com.seeker.tony.cutter.process.ViewInject;
 
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
