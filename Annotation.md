@@ -1,6 +1,8 @@
 # annotationRuntime
 运行时注释，范例；
 
+Via: http://blog.csdn.net/dd864140130/article/details/53875814
+
 什么是元数据(metadata)
 
 元数据由metadata译来，所谓的元数据就是“关于数据的数据”,更通俗的说就是描述数据的数据，对数据及信息资源的描述性信息.比如说一个文本文件,有创建时间,创建人,文件大小等数据,这都可以理解为是元数据.
