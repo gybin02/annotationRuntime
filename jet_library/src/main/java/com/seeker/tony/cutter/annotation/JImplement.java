@@ -1,7 +1,7 @@
 package com.seeker.tony.cutter.annotation;
 
 /**
- * @author zhengxiaobin@xiaoyouzi.com
+ * @author zhengxiaobin
  * @since 17/5/19
  */
 
